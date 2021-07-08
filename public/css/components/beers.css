@@ -1,0 +1,6 @@
+.beers {
+  display: flex;
+  flex-wrap: wrap;
+  height: calc(100vh - 1.6rem);
+  position: absolute;
+  padding: 0 10rem 0 15rem; }

@@ -1,0 +1,58 @@
+// font sizes
+$big-font-size: 2.2rem;
+$btn-font-size: 1.8rem;
+$default-font-size: 1.6rem;
+$icon-font-size: 3rem;
+$logo-font-size: 15rem;
+$logo-font-size-mobile: 12rem;
+$medium-font-size: 1.8rem;
+
+// font families
+$main-font: social-gothic, sans-serif;;
+$secondary-font: 'Montserrat', sans-serif;
+
+// font weights
+$bold: 600;
+$light: 300;
+
+h1 {
+    font-family: $main-font;
+    font-size: $logo-font-size;
+    text-shadow: -2px 1px 1px $off-white;
+}
+
+h2 {
+    font-size: $big-font-size;
+    font-family: $secondary-font;
+    font-weight: $light;
+    letter-spacing: 0.4rem;
+    text-shadow: -2px 1px 1px $off-white;
+}
+
+h3 {
+    font-size: $big-font-size;
+    font-family: $secondary-font;
+    font-weight: $bold;
+    text-align: center;
+}
+
+p {
+    font-size: $default-font-size;
+    font-family: $secondary-font;
+}
+
+a {
+    font-size: $btn-font-size;
+    font-family: $secondary-font;
+}
+
+@media (max-width: $mobile-break) {
+    h1 {
+        font-size: $logo-font-size-mobile;
+    }
+
+    h3 {
+        font-size: $medium-font-size;
+        // font-weight: $light;
+    }
+}

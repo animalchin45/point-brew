@@ -1,17 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React, { useState } from 'react'
+import ReactDOM from 'react-dom'
+import Hero from './components/Hero'
+import Details from './components/Details'
+import Hamburger from './components/Hamburger'
+import menuItems from './components/menuitems/menuItems'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const Brewery = () => {
+    const [selectedMenuItem, setSelectedMenuItem] = useState('About Us')
+    
+    return (
+        <div className="site_wrapper">
+            <Hamburger 
+                menuItems={menuItems} 
+                setSelectedMenuItem={setSelectedMenuItem}    
+            />
+            <Hero />
+            <Details 
+                menuItems={menuItems} 
+                selectedMenuItem={selectedMenuItem}
+                setSelectedMenuItem={setSelectedMenuItem}
+            />
+        </div>
+    )
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<Brewery />, document.querySelector('#root'))

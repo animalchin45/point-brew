@@ -1,0 +1,9 @@
+.title {
+  display: flex;
+  align-items: flex-end; }
+  .title--primary {
+    margin-left: -3px;
+    line-height: 13.3rem; }
+  .title--sub {
+    line-height: 2.5rem;
+    margin-top: 1.75rem; }

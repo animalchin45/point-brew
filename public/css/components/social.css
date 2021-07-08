@@ -1,0 +1,12 @@
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  right: 2rem;
+  text-align: right;
+  top: 2rem; }
+  .social__links {
+    display: flex; }
+    .social__links p {
+      margin: 0 0 .5rem 1.6rem; }

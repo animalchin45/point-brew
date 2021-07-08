@@ -1,0 +1,55 @@
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 1.6rem;
+    text-align: right;
+    top: 2.5rem;
+
+    &__links {
+        display: flex;
+
+        & i {
+            color: $primary;
+            cursor: pointer;
+            font-size: $icon-font-size;
+            margin: 0 0 .5rem 1rem;
+        }
+    }
+
+    &__tag {
+        color: $primary;
+    }
+}
+
+.social-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 1.6rem;
+    text-align: right;
+    top: 1.4rem;
+
+    &__links {
+        display: flex;
+
+        & i {
+            color: $primary;
+            cursor: pointer;
+            font-size: $icon-font-size;
+            margin: 0 0 .5rem 1rem;
+        }
+    }
+
+    &__tag {
+        color: $primary;
+    }
+}
+
+@media (max-width: $mobile-break) {
+    .social {
+        display: none;
+    }
+}

@@ -1,0 +1,58 @@
+.ReactModalPortal > div {
+    opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: opacity $time-medium ease-in-out;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.modal {
+    background-color: $off-white;
+    border: 1.6rem solid $primary;
+    height: 40rem;
+    left: 11%;
+    outline: none;
+    padding: 1.6rem;
+    position: absolute;
+    width: 30%;
+
+    &__selectedbeer {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        position: relative;
+
+        &--desc {
+            margin: 1rem 0 1rem 0;
+        }
+    }
+
+    &__glass {
+        height: 20rem;
+        margin-left: -4rem;
+        width: 15rem;
+    }
+
+    h3 {
+        font-weight: $bold;
+    }
+}
+
+@media (max-width: $mobile-break) {
+    .modal {
+        left: auto;
+        width: 100%;
+    }
+}

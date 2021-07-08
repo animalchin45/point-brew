@@ -1,0 +1,35 @@
+.btn {
+    transition: backgroud-color .5s ease-out;
+    background-color: rgba($dark-gray, .6);
+    border: 2px solid $black;
+    // border-radius: 5px;
+    color: $off-white;
+    cursor: pointer;
+    font-size: $btn-font-size;
+    height: $btn-height !important;
+    margin-bottom: $margin-small;
+    outline: none;
+    padding: $padding-btn-top $padding-small $padding-btn-bottom $padding-small;
+    text-align: center;
+    text-decoration: none;
+    width: $btn-width;
+    -webkit-transition: backgroud-color .5s ease-out;
+
+    &:active {
+        background-color: $primary;
+    }
+
+    &:hover {
+        background-color: $primary;
+    }
+
+    &--back {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    &--menu {
+        margin-bottom: $margin-large;
+    }
+}

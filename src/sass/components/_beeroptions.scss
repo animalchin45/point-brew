@@ -1,0 +1,14 @@
+.beeroptions {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+}
+
+@media (max-width: $mobile-break) {
+    .beeroptions {
+        justify-content: center;
+    }
+}

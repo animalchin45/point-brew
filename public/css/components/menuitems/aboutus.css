@@ -1,0 +1,10 @@
+.aboutus {
+  display: flex;
+  flex-direction: column;
+  height: 35rem;
+  justify-content: space-around;
+  width: 35rem; }
+  .aboutus--text {
+    line-height: 2.3rem; }
+  .aboutus__hours {
+    margin-bottom: 2rem; }

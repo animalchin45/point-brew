@@ -1,0 +1,9 @@
+.welcome {
+  display: flex;
+  align-items: center;
+  background-image: url("../img/brewery.jpg");
+  background-size: cover;
+  height: calc(100vh - 1.6rem);
+  justify-content: center;
+  overflow: hidden;
+  position: relative; }

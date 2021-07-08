@@ -1,0 +1,24 @@
+.menu {
+    background-size: cover;
+    background-image: url(../img/menu.jpg);
+    background-repeat: no-repeat;
+    background-position: left 0px bottom -14rem;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    width: 50%;
+
+    &__items {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: $mobile-break) {
+    .menu {
+        display: none;
+    }
+}

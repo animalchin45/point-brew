@@ -1,0 +1,38 @@
+.title {
+    display: flex;
+    align-items: flex-end;
+
+    &--primary {
+        margin-left: -3px;
+        line-height: 13.3rem;
+    }
+
+    &--sub {
+        line-height: 2.5rem;
+        margin-top: 1.75rem;
+    }
+}
+
+.title-mobile {
+    display: flex;
+    align-items: flex-end;
+
+    &--sub {
+        line-height: 2.5rem;
+        margin-top: 1.75rem;
+    }
+}
+
+
+@media (max-width: $mobile-break) {
+    .title {
+
+        &--primary {
+            line-height: 10.5rem;
+        }
+    }
+
+    .title--sub {
+        display: none;
+    }
+}

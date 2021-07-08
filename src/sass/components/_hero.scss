@@ -1,0 +1,17 @@
+.hero {
+    display: flex;
+    align-items: center;
+    background-image: url("../img/brewery.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 1.6rem);
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+@media (max-width: $mobile-break) {
+    .hero {
+        // background-position: left 0 bottom -15rem;
+    }
+}

@@ -1,0 +1,9 @@
+.news {
+  display: flex;
+  flex-direction: column;
+  height: 90h;
+  top: 0;
+  width: 27rem; }
+  .news__text {
+    line-height: 2rem;
+    margin: 2rem 0 0 0; }

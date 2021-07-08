@@ -1,0 +1,52 @@
+.beers {
+    align-items: center;
+    animation: fade-in $time-medium ease-in-out;
+    display: flex;
+    height: calc(100vh - 1.6rem);
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+
+    &__beer {
+        align-items: center;
+        display: flex;
+        height: $beer-image-height;
+        margin: $margin-medium;
+        width: 80%;
+
+        &__img {
+            background-color: $off-white;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            border: none;
+            cursor: pointer;
+            height: $beer-image-height;
+            margin: $margin-small $margin-medium $margin-small $margin-medium;
+            outline: none;
+            text-align: center;
+            width: $beer-image-width;
+        }
+
+        &__title {
+            margin-left: $margin-small;
+            text-align: left;
+        }
+    }
+}
+
+@media (max-width: $mobile-break) {
+    .beers {
+        padding: $margin-medium;
+
+        &__beer {
+            height: $beer-image-height-mobile;
+            margin: $margin-small;
+
+            &__img {
+                height: $beer-image-height-mobile;
+                width: $beer-image-width-mobile;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.article {
+    animation: fade-in $time-medium ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: $content-height;
+    justify-content: center;
+    width: $content-width;
+
+    &__text {
+        line-height: 2.3rem;
+        margin-bottom: $margin-medium;
+    }
+
+    &__title {
+        margin-bottom: $margin-medium;
+    }
+}
+
+@media (max-width: $mobile-break) {
+    .article {
+        height: 80%;
+        width: 80%;
+    }
+}
